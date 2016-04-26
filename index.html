@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="./css/tables.css">
+  <title>JavaScript MVC Table Example</title>
+  <!--JQuery Dependancy-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <!--Tables MVC JS-->
+  <script type="text/javascript" src="./js/tables_model.js"></script>
+  <script type="text/javascript" src="./js/tables_view.js"></script>
+  <script type="text/javascript" src="./js/tables_controller.js"></script>
+  <script type="text/javascript" src="./js/tables_events.js"></script>
+  <script type="text/javascript" src="./js/tables_init.js"></script>
+</head>
+<body>
+  <div id="pageWrap">
+    <div id="financialData">
+      <h1>Financial Data</h1>
+      <p>Use the form below to add new tickers and Trade Volume.</p>
+      <h1>Exchange Data</h1>
+      <table id="financialDataTable"></table>  
+    </div>
+    <div id="financialDataFormWrap">
+      <form id="financialDataForm" class="basic-grey">
+        <h1>Trade Volume Form
+          <span>Please fill all the texts in the fields.</span>
+        </h1>
+        <label>
+          <span>Ticker :</span>
+          <input id="ticker" type="text" name="ticker" placeholder="Ticker Name" />
+        </label>
+        <label>
+          <span>Trade Volume :</span>
+          <input id="volume" type="text" name="volume" placeholder="Trade Volume" />
+        </label>
+        <label>
+          <span class="send">&nbsp;</span>
+          <input id="submitButton" type="button" class="button" value="Send" />
+        </label>    
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
+
